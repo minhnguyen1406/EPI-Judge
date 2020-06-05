@@ -3,6 +3,7 @@ import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 public class PowerXY {
   @EpiTest(testDataFile = "power_x_y.tsv")
+// n is the number of bits in the integer type
 //Brute force algorithm O(2^n) time
   /*public static double power(double x, int y) {
     if (x == 0){
@@ -36,7 +37,7 @@ public class PowerXY {
     }
     return result;
   }*/
-  //Optimal algorithm
+  //Optimal algorithm O(n) time
   public static double power (double x, int y){
     double result = 1.0;
     if (y < 0){
