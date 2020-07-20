@@ -1,24 +1,26 @@
 package epi;
+
 import epi.test_framework.EpiTest;
 import epi.test_framework.EpiUserType;
 import epi.test_framework.GenericTest;
 import epi.test_framework.TestFailure;
 
+import java.util.ArrayDeque;
+import java.util.Collections;
+import java.util.Deque;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 public class QueueWithMax {
+  private Deque<Integer> queue = new ArrayDeque<Integer>();
   public void enqueue(Integer x) {
-    // TODO - you fill in here.
-    return;
+    queue.addLast(x);
   }
   public Integer dequeue() {
-    // TODO - you fill in here.
-    return 0;
+    return queue.removeFirst();
   }
   public Integer max() {
-    // TODO - you fill in here.
-    return 0;
+    return Collections.max(queue);
   }
   @EpiUserType(ctorParams = {String.class, int.class})
   public static class QueueOp {
