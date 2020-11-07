@@ -5,8 +5,13 @@ public class MakingChange {
   @EpiTest(testDataFile = "making_change.tsv")
 
   public static int changeMaking(int cents) {
-    // TODO - you fill in here.
-    return 0;
+    final int[] coins = {100, 50, 25, 10, 5, 1};
+    int count = 0;
+    for (int i = 0; i < coins.length; i++){
+      count += cents / coins[i];
+      cents %= coins[i];
+    }
+    return count;
   }
 
   public static void main(String[] args) {

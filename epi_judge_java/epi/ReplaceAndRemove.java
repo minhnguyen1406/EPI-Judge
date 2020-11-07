@@ -9,6 +9,8 @@ import java.util.List;
 
 public class ReplaceAndRemove {
 
+  // n is the number of element
+  // Optimal solution, O(n) time and O(1) space
   public static int replaceAndRemove(int size, char[] s) {
 
     // Forward iteration: remove 'b's and count the number of 'a's.

@@ -1,26 +1,42 @@
 package epi;
+
 import epi.test_framework.EpiTest;
 import epi.test_framework.EpiUserType;
 import epi.test_framework.GenericTest;
 import epi.test_framework.TestFailure;
 
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
-public class LruCache {
-  LruCache(final int capacity) {}
-  public Integer lookup(Integer key) {
-    // TODO - you fill in here.
-    return 0;
+//Optimal solution, O(1) constant time for lookup, insert, erase with O(capacity)
+public class LruCache extends LinkedHashMap<Integer, Integer> {
+  private int capacity;    
+  LruCache(int capacity) {
+    super(capacity, 1.0F, true);
+    this.capacity = capacity;
   }
-  public void insert(Integer key, Integer value) {
-    // TODO - you fill in here.
-    return;
+
+  public int lookup(int key) {
+    return super.getOrDefault(key, -1);
   }
+
+  public void insert(int key, int value) {
+    super.putIfAbsent(key, value);
+  }
+
+  
   public Boolean erase(Object key) {
-    // TODO - you fill in here.
-    return true;
+    return super.remove(key) != null;
   }
-  @EpiUserType(ctorParams = {String.class, int.class, int.class})
+
+  @Override
+  protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+    return size() > capacity;
+  }
+
+
+  @EpiUserType(ctorParams = { String.class, int.class, int.class })
   public static class Op {
     String code;
     int arg1;
@@ -42,34 +58,29 @@ public class LruCache {
     for (Op op : commands.subList(1, commands.size())) {
       int result;
       switch (op.code) {
-      case "lookup":
-        result = cache.lookup(op.arg1);
-        if (result != op.arg2) {
-          throw new TestFailure("Lookup: expected " + String.valueOf(op.arg2) +
-                                ", got " + String.valueOf(result));
-        }
-        break;
-      case "insert":
-        cache.insert(op.arg1, op.arg2);
-        break;
-      case "erase":
-        result = cache.erase(op.arg1) ? 1 : 0;
-        if (result != op.arg2) {
-          throw new TestFailure("Erase: expected " + String.valueOf(op.arg2) +
-                                ", got " + String.valueOf(result));
-        }
-        break;
-      default:
-        throw new RuntimeException("Unexpected command " + op.code);
+        case "lookup":
+          result = cache.lookup(op.arg1);
+          if (result != op.arg2) {
+            throw new TestFailure("Lookup: expected " + String.valueOf(op.arg2) + ", got " + String.valueOf(result));
+          }
+          break;
+        case "insert":
+          cache.insert(op.arg1, op.arg2);
+          break;
+        case "erase":
+          result = cache.erase(op.arg1) ? 1 : 0;
+          if (result != op.arg2) {
+            throw new TestFailure("Erase: expected " + String.valueOf(op.arg2) + ", got " + String.valueOf(result));
+          }
+          break;
+        default:
+          throw new RuntimeException("Unexpected command " + op.code);
       }
     }
   }
 
   public static void main(String[] args) {
-    System.exit(
-        GenericTest
-            .runFromAnnotations(args, "LruCache.java",
-                                new Object() {}.getClass().getEnclosingClass())
-            .ordinal());
+    System.exit(GenericTest.runFromAnnotations(args, "LruCache.java", new Object() {
+    }.getClass().getEnclosingClass()).ordinal());
   }
 }

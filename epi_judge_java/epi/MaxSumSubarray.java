@@ -7,8 +7,12 @@ public class MaxSumSubarray {
   @EpiTest(testDataFile = "max_sum_subarray.tsv")
 
   public static int findMaximumSubarray(List<Integer> A) {
-    // TODO - you fill in here.
-    return -1;
+    int currSum = 0, maxSum = 0;
+    for (int i = 0; i < A.size(); i++){
+      currSum = Math.max(A.get(i), A.get(i) + currSum);
+      maxSum = Math.max(maxSum, currSum);
+    }
+    return maxSum;
   }
 
   public static void main(String[] args) {

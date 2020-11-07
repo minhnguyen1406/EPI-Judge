@@ -1034,7 +1034,7 @@ problem_mapping = {
                 "total": 948
             },
             "Java: LowestCommonAncestor.java": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Python: lowest_common_ancestor.py": {
@@ -1048,7 +1048,7 @@ problem_mapping = {
                 "total": 948
             },
             "Java: LowestCommonAncestorWithParent.java": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Python: lowest_common_ancestor_with_parent.py": {
@@ -1218,7 +1218,7 @@ problem_mapping = {
                 "total": 152
             },
             "Java: SortedArraysMerge.java": {
-                "passed": 0,
+                "passed": 152,
                 "total": 152
             },
             "Python: sorted_arrays_merge.py": {
@@ -1260,7 +1260,7 @@ problem_mapping = {
                 "total": 51
             },
             "Java: KClosestStars.java": {
-                "passed": 0,
+                "passed": 51,
                 "total": 51
             },
             "Python: k_closest_stars.py": {
@@ -1346,7 +1346,7 @@ problem_mapping = {
                 "total": 2000
             },
             "Java: IntSquareRoot.java": {
-                "passed": 0,
+                "passed": 2000,
                 "total": 2000
             },
             "Python: int_square_root.py": {
@@ -1402,7 +1402,7 @@ problem_mapping = {
                 "total": 503
             },
             "Java: KthLargestInArray.java": {
-                "passed": 0,
+                "passed": 503,
                 "total": 503
             },
             "Python: kth_largest_in_array.py": {
@@ -1446,7 +1446,7 @@ problem_mapping = {
                 "total": 9
             },
             "Java: Anagrams.java": {
-                "passed": 0,
+                "passed": 9,
                 "total": 9
             },
             "Python: anagrams.py": {
@@ -1474,7 +1474,7 @@ problem_mapping = {
                 "total": 212
             },
             "Java: IsAnonymousLetterConstructible.java": {
-                "passed": 0,
+                "passed": 212,
                 "total": 212
             },
             "Python: is_anonymous_letter_constructible.py": {
@@ -1488,7 +1488,7 @@ problem_mapping = {
                 "total": 101
             },
             "Java: LruCache.java": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Python: lru_cache.py": {
@@ -1516,7 +1516,7 @@ problem_mapping = {
                 "total": 505
             },
             "Java: NearestRepeatedEntries.java": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Python: nearest_repeated_entries.py": {
@@ -1616,7 +1616,7 @@ problem_mapping = {
                 "total": 202
             },
             "Java: IntersectSortedArrays.java": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Python: intersect_sorted_arrays.py": {
@@ -1630,7 +1630,7 @@ problem_mapping = {
                 "total": 201
             },
             "Java: TwoSortedArraysMerge.java": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             },
             "Python: two_sorted_arrays_merge.py": {
@@ -1786,7 +1786,7 @@ problem_mapping = {
                 "total": 955
             },
             "Java: SearchInBst.java": {
-                "passed": 0,
+                "passed": 955,
                 "total": 955
             },
             "Python: search_in_bst.py": {
@@ -1800,7 +1800,7 @@ problem_mapping = {
                 "total": 3139
             },
             "Java: IsTreeABst.java": {
-                "passed": 0,
+                "passed": 3139,
                 "total": 3139
             },
             "Python: is_tree_a_bst.py": {
@@ -1814,7 +1814,7 @@ problem_mapping = {
                 "total": 949
             },
             "Java: SearchFirstGreaterValueInBst.java": {
-                "passed": 0,
+                "passed": 949,
                 "total": 949
             },
             "Python: search_first_greater_value_in_bst.py": {
@@ -1828,7 +1828,7 @@ problem_mapping = {
                 "total": 949
             },
             "Java: KLargestValuesInBst.java": {
-                "passed": 0,
+                "passed": 949,
                 "total": 949
             },
             "Python: k_largest_values_in_bst.py": {
@@ -1970,7 +1970,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: Hanoi.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: hanoi.py": {
@@ -1998,7 +1998,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: NQueens.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: n_queens.py": {
@@ -2130,11 +2130,11 @@ problem_mapping = {
                 "total": 1001
             },
             "Java: Fibonacci.java": {
-                "passed": 0,
+                "passed": 46,
                 "total": 46
             },
             "Java: MaxSumSubarray.java": {
-                "passed": 0,
+                "passed": 1001,
                 "total": 1001
             },
             "Python: fibonacci.py": {
@@ -2152,7 +2152,7 @@ problem_mapping = {
                 "total": 1003
             },
             "Java: NumberOfScoreCombinations.java": {
-                "passed": 0,
+                "passed": 1003,
                 "total": 1003
             },
             "Python: number_of_score_combinations.py": {
@@ -2166,7 +2166,7 @@ problem_mapping = {
                 "total": 100
             },
             "Java: LevenshteinDistance.java": {
-                "passed": 0,
+                "passed": 100,
                 "total": 100
             },
             "Python: levenshtein_distance.py": {
@@ -2322,7 +2322,7 @@ problem_mapping = {
                 "total": 49999
             },
             "Java: MakingChange.java": {
-                "passed": 0,
+                "passed": 49999,
                 "total": 49999
             },
             "Python: making_change.py": {
@@ -2372,7 +2372,7 @@ problem_mapping = {
                 "total": 103
             },
             "Java: TwoSum.java": {
-                "passed": 0,
+                "passed": 1005,
                 "total": 1005
             },
             "Python: minimum_points_covering_intervals.py": {
@@ -2390,7 +2390,7 @@ problem_mapping = {
                 "total": 1008
             },
             "Java: ThreeSum.java": {
-                "passed": 0,
+                "passed": 1008,
                 "total": 1008
             },
             "Python: three_sum.py": {
@@ -2418,7 +2418,7 @@ problem_mapping = {
                 "total": 202
             },
             "Java: RefuelingSchedule.java": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Python: refueling_schedule.py": {

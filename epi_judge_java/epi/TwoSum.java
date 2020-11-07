@@ -7,8 +7,17 @@ public class TwoSum {
   @EpiTest(testDataFile = "two_sum.tsv")
 
   public static boolean hasTwoSum(List<Integer> A, int t) {
-    // TODO - you fill in here.
-    return true;
+    int i = 0, j = A.size() - 1;
+    while (i <= j) {
+      if (A.get(i) + A.get(j) == t) {
+        return true;
+      } else if (A.get(i) + A.get(j) < t) {
+        ++i;
+      } else { // A[i] + A[j] > t.
+        --j;
+      }
+    }
+    return false;
   }
 
   public static void main(String[] args) {
